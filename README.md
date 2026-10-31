@@ -14,5 +14,6 @@ Imagens fatiadas das newsletters disparadas pelo Connectif, servidas via jsDeliv
 | `img/rs/` | Ressaca 10.10 (11/10) |
 | `img/ru/` | Ressaca — Últimas horas (12/10) |
 | `img/as/` | Assinatura (out/2026) |
+| `img/bf/` | Monte seu Kit — Black Friday (01/11) |
 
 Não apague nem renomeie arquivos: e-mails já enviados dependem desses endereços.
