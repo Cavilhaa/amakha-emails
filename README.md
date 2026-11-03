@@ -1,8 +1,10 @@
 # Amakha Paris — imagens das newsletters
 
-Imagens fatiadas das newsletters disparadas pelo Connectif, servidas via jsDelivr:
+Imagens fatiadas e HTML das newsletters disparadas pelo Connectif, servidas via jsDelivr (sempre com o commit fixo):
 
-`https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@main/img/<pasta>/<arquivo>`
+`https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@<COMMIT>/img/<pasta>/<arquivo>`
+
+Como fazer uma news nova: veja `CLAUDE.md` e a pasta `tools/`. Código final de cada news enviada: `emails/<data-nome>/corpo.html`.
 
 | Pasta | Newsletter |
 |---|---|
