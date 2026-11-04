@@ -11,7 +11,13 @@ O Cavilha manda: o .zip com as fatias + a arte completa (PNG) + o e-mail da clie
 1. **Fatiar** (descobre sozinho a posição de cada fatia na arte, inclusive desalinhamentos de 3px):
    `python3 tools/slice_news.py <zip> <arte.png> emails/AAAA-MM-DD-nome-da-news`
 2. **Preencher o `spec.json`**: troque todos os `TODO`
-   - `utm_campaign`: `nome-da-acao_DDMM` (ex.: `monte-seu-kit-bf_0111`)
+   - `utm` (**padrão MGP**, manual da agência — sem acento, espaço ou caractere que precise codificar):
+     `utm_source=connectif` · `utm_medium=email` (minúsculos) ·
+     `utm_campaign=MGP_EMAIL_<OBJETIVO>_<ALGO-UTIL>` em MAIÚSCULO e **sem data** (ex.: `MGP_EMAIL_VENDAS_MONTE-SEU-KIT-BF`;
+     OBJETIVO: VENDAS, LEADS, TRAFEGO, RECONHECIMENTO, ENGAJAMENTO, REMARKETING, RETENCAO…) ·
+     `utm_content=<PECA>_<FORMATO>_<AAMM>` com formato `NEWSLETTER` (ex.: `NEWS-KIT-BF-VITRINES_NEWSLETTER_2611`).
+     Disparos da mesma ação = mesma campaign, peça diferente no content. Push web: `utm_medium=web-push`.
+     O `build_news.py` recusa UTM fora do padrão.
    - `preheader`: frase curta que complementa o assunto
    - `note`: texto legal da promoção (validade, cupom, valor mínimo) — copie do rodapé do banner
    - cada bloco/célula com `"source"` = qual fatia original; preencha `alt` (texto da imagem) e `href`
@@ -47,6 +53,7 @@ O Cavilha manda: o .zip com as fatias + a arte completa (PNG) + o e-mail da clie
 - Teste para o Cavilha e para a cliente antes de agendar. Horários-base: 8h (abertura de ação), 11h30, 19h30 (últimas horas).
 
 ## Estrutura
+- As news de 02/10 a 01/11/2026 usaram o padrão antigo (`utm_campaign=acao_DDMM`); a partir de 04/11 é o padrão MGP.
 - `tools/` — `slice_news.py`, `build_news.py`, `check_news.py`, `cabecalho-connectif.html`
 - `emails/<data-nome>/` — `spec.json`, `img/`, `corpo.html` (news feitas com a ferramenta) ou só `corpo.html` (arquivo histórico)
 - `img/` — imagens das news de out/2026 (feitas antes da ferramenta). Não mexer.

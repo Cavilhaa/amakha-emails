@@ -135,7 +135,10 @@ def main():
             c.paste(p['img'], (p['x'] - x0, p['y'] - y0))
         return c
 
-    spec = dict(utm_campaign='TODO', preheader='TODO', folder='TODO-pasta-curta-ex-bf',
+    spec = dict(utm=dict(utm_source='connectif', utm_medium='email',
+                         utm_campaign='TODO MGP_EMAIL_<OBJETIVO>_<ALGO-UTIL> ex MGP_EMAIL_VENDAS_MONTE-SEU-KIT-BF',
+                         utm_content='TODO <PECA>_NEWSLETTER_<AAMM> ex NEWS-KIT-BF-VITRINES_NEWSLETTER_2611'),
+                preheader='TODO', folder='TODO-pasta-curta-ex-bf',
                 note='TODO texto legal (validade da promoção) ou deixe vazio',
                 art=os.path.basename(art_path), blocks=[])
     n = 1

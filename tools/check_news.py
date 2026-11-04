@@ -104,8 +104,10 @@ def main():
         c = http_code(h2) if 'amakhaparis' in h2 else 'ext'
         print(f'   {c}  {h2.split("utm_")[0].replace(SITE, "").rstrip("?&")}')
         if c not in ('200', 'ext'): problems.append(f'link não abre ({c}): {h2}')
-    utms = set(re.findall(r'utm_campaign=([^&"]+)', s))
-    print(f'   utm_campaign: {utms}')
+    utms = set(re.findall(r'(utm_source=[^"]+)"', s.replace('&amp;', '&')))
+    utms = {re.sub(r'^.*?(utm_source=)', r'\1', x) for x in utms}
+    print(f'   UTMs usadas: {utms}')
+    if len(utms) > 1: problems.append(f'UTMs diferentes entre links: {utms}')
 
     # 5 vitrines
     slugs = list(dict.fromkeys(re.findall(r'amakhaparis\.com\.br/([a-z0-9-]+)/p[?"]', s)))

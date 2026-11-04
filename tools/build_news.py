@@ -35,14 +35,26 @@ def main():
     folder, base = sys.argv[1], sys.argv[2]
     if not base.endswith('/'): base += '/'
     spec = json.load(open(os.path.join(folder, 'spec.json')))
-    todos = [k for k in ('utm_campaign', 'preheader', 'note') if 'TODO' in str(spec.get(k, ''))]
+    todos = [k for k in ('preheader', 'note') if 'TODO' in str(spec.get(k, ''))]
+    todos += [f'utm.{k}' for k, v in (spec.get('utm') or {}).items() if 'TODO' in str(v)]
     for i, b in enumerate(spec['blocks']):
         for c in (b.get('cells') or [b]):
             for k in ('alt', 'href'):
                 if 'TODO' in str(c.get(k)): todos.append(f'bloco {i+1} {c.get("img")} {k}')
     if todos:
         sys.exit('Ainda tem TODO no spec.json:\n  ' + '\n  '.join(todos))
-    utm = f'utm_source=connectif&utm_medium=email&utm_campaign={spec["utm_campaign"]}'
+    # Padrão MGP (manual da agência): source/medium minúsculos; campaign MGP_EMAIL_<OBJETIVO>_<ALGO-UTIL> em MAIÚSCULO,
+    # sem data; content <PECA>_<FORMATO>_<AAMM>. Sem acento, espaço ou caractere especial (nada que precise codificar).
+    import re as _re
+    u = spec.get('utm') or {'utm_source': 'connectif', 'utm_medium': 'email', 'utm_campaign': spec.get('utm_campaign')}
+    for k, v in u.items():
+        if not v or not _re.fullmatch(r'[A-Za-z0-9_-]+', str(v)):
+            sys.exit(f'UTM fora do padrão MGP ({k}={v!r}): só letras sem acento, números, _ e -')
+    if u.get('utm_source') != u['utm_source'].lower() or u.get('utm_medium') != u['utm_medium'].lower():
+        sys.exit('utm_source e utm_medium precisam ser minúsculos')
+    if not u.get('utm_campaign', '').startswith('MGP_') or u['utm_campaign'] != u['utm_campaign'].upper():
+        print('AVISO: utm_campaign fora do padrão MGP_<ORIGEM>_<OBJETIVO>_<ALGO-UTIL> em maiúsculo (ok só se for exceção combinada com o cliente)')
+    utm = '&'.join(f'{k}={v}' for k, v in u.items())
 
     def link(h):
         if not h: return None
@@ -61,7 +73,7 @@ def main():
              f'font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#555555;background-color:{bg};" />')
         href = link(c.get('href'))
         if href:
-            t = f'<a href="{html.escape(href, quote=True)}" target="_blank" style="display:block;text-decoration:none;">{t}</a>'
+            t = f'<a href="{href.replace(chr(34), "%22")}" target="_blank" style="display:block;text-decoration:none;">{t}</a>'
         return t
 
     rows = []

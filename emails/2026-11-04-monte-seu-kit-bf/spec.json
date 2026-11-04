@@ -1,5 +1,4 @@
 {
-  "utm_campaign": "monte-seu-kit-bf_0411",
   "preheader": "Seus perfumes favoritos no mesmo kit, com até 25% OFF extra + mimo 🖤",
   "folder": "2026-11-04-monte-seu-kit-bf",
   "note": "Descontos progressivos do Monte seu Kit válidos para itens selecionados no site, enquanto durarem os estoques.",
@@ -213,5 +212,11 @@
       "role": "footer",
       "alt": "Rua Sacramento, 522 - 09640-000 - São Bernardo do Campo - SP - Brasil. CNPJ: 54.101.165/0001-89"
     }
-  ]
+  ],
+  "utm": {
+    "utm_source": "connectif",
+    "utm_medium": "email",
+    "utm_campaign": "MGP_EMAIL_VENDAS_MONTE-SEU-KIT-BF",
+    "utm_content": "NEWS-KIT-BF-VITRINES_NEWSLETTER_2611"
+  }
 }
