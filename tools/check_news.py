@@ -105,7 +105,9 @@ def main():
         print(f'   {c}  {h2.split("utm_")[0].replace(SITE, "").rstrip("?&")}')
         if c not in ('200', 'ext'): problems.append(f'link não abre ({c}): {h2}')
     utms = set(re.findall(r'(utm_source=[^"]+)"', s.replace('&amp;', '&')))
-    utms = {re.sub(r'^.*?(utm_source=)', r'\1', x) for x in utms}
+    utms = {re.sub(r'&utm_term=[^&]*', '', re.sub(r'^.*?(utm_source=)', r'\1', x)) for x in utms}
+    terms = sorted(set(re.findall(r'utm_term=([^&"]+)', s)))
+    if terms: print(f'   utm_term por bloco: {terms}')
     print(f'   UTMs usadas: {utms}')
     if len(utms) > 1: problems.append(f'UTMs diferentes entre links: {utms}')
 

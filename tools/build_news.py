@@ -11,6 +11,7 @@ Gera na pasta da news:
   corpo.html    -> o que vai no bloco HTML do Connectif
   preview.html  -> página completa para conferir no navegador (sem o <style>, simula o pior caso)
 Regras embutidas: layout fluido (100% até 600px), tabelas, sem link relativo, UTM em todo link do site.
+Opcional por bloco/célula: "term" (vira utm_term) e "base" (URL jsDelivr de imagem já hospedada em outra news).
 """
 import sys, os, json, html
 
@@ -35,7 +36,7 @@ def main():
     folder, base = sys.argv[1], sys.argv[2]
     if not base.endswith('/'): base += '/'
     spec = json.load(open(os.path.join(folder, 'spec.json')))
-    todos = [k for k in ('preheader', 'note') if 'TODO' in str(spec.get(k, ''))]
+    todos = [k for k in ('preheader', 'note', 'utm_campaign', 'utm_content') if 'TODO' in str(spec.get(k, ''))]
     todos += [f'utm.{k}' for k, v in (spec.get('utm') or {}).items() if 'TODO' in str(v)]
     for i, b in enumerate(spec['blocks']):
         for c in (b.get('cells') or [b]):
@@ -46,7 +47,9 @@ def main():
     # Padrão MGP (manual da agência): source/medium minúsculos; campaign MGP_EMAIL_<OBJETIVO>_<ALGO-UTIL> em MAIÚSCULO,
     # sem data; content <PECA>_<FORMATO>_<AAMM>. Sem acento, espaço ou caractere especial (nada que precise codificar).
     import re as _re
-    u = spec.get('utm') or {'utm_source': 'connectif', 'utm_medium': 'email', 'utm_campaign': spec.get('utm_campaign')}
+    u = spec.get('utm') or {k: spec[k] for k in ('utm_source', 'utm_medium', 'utm_campaign', 'utm_content') if spec.get(k)}
+    u.setdefault('utm_source', 'connectif'); u.setdefault('utm_medium', 'email')
+    u = {k: u[k] for k in ('utm_source', 'utm_medium', 'utm_campaign', 'utm_content') if u.get(k)} | {k: v for k, v in u.items() if k not in ('utm_source', 'utm_medium', 'utm_campaign', 'utm_content')}
     for k, v in u.items():
         if not v or not _re.fullmatch(r'[A-Za-z0-9_-]+', str(v)):
             sys.exit(f'UTM fora do padrão MGP ({k}={v!r}): só letras sem acento, números, _ e -')
@@ -56,22 +59,28 @@ def main():
         print('AVISO: utm_campaign fora do padrão MGP_<ORIGEM>_<OBJETIVO>_<ALGO-UTIL> em maiúsculo (ok só se for exceção combinada com o cliente)')
     utm = '&'.join(f'{k}={v}' for k, v in u.items())
 
-    def link(h):
+    def link(h, term=None):
         if not h: return None
         if h.startswith('/'):
             h = SITE + h
         if not h.startswith('https://'):
             sys.exit(f'Link inválido (precisa ser https:// ou começar com /): {h}')
         if h.startswith(SITE):
-            h += ('&' if '?' in h else '?') + utm
+            if term and not _re.fullmatch(r'[A-Za-z0-9_-]+', term):
+                sys.exit(f'utm_term fora do padrão MGP: {term!r}')
+            h += ('&' if '?' in h else '?') + utm + (f'&utm_term={term}' if term else '')
         return h
 
     def img(c, h, bg):
         a = html.escape(c.get('alt') or '', quote=True)
-        t = (f'<img src="{base}{c["img"]}" width="{c["w"]}" height="{h}" alt="{a}" border="0" '
+        b_ = c.get('base') or base  # "base" no spec = imagem já hospedada em outra news (reaproveitada)
+        if not b_.endswith('/'): b_ += '/'
+        if c.get('base') and not b_.startswith('https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@'):
+            sys.exit(f'base por imagem precisa ser jsDelivr com commit fixo: {b_}')
+        t = (f'<img src="{b_}{c["img"]}" width="{c["w"]}" height="{h}" alt="{a}" border="0" '
              f'style="display:block;width:100%;max-width:{c["w"]}px;height:auto;border:0;outline:none;text-decoration:none;'
              f'font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#555555;background-color:{bg};" />')
-        href = link(c.get('href'))
+        href = link(c.get('href'), c.get('term'))
         if href:
             t = f'<a href="{href.replace(chr(34), "%22")}" target="_blank" style="display:block;text-decoration:none;">{t}</a>'
         return t

@@ -1,0 +1,211 @@
+{
+  "utm_campaign": "MGP_EMAIL_VENDAS_MONTE-SEU-KIT-BF",
+  "utm_source": "connectif",
+  "utm_medium": "email",
+  "utm_content": "NEWS-REFORCO_NEWSLETTER_2611",
+  "preheader": "Quanto mais favoritos no seu kit, mais vantagens para aproveitar 🖤",
+  "folder": "bf-0811",
+  "note": "Vantagens progressivas do Monte seu Kit válidas para itens selecionados no site, enquanto durarem os estoques.",
+  "art": "arte-completa.png",
+  "blocks": [
+    {
+      "type": "row",
+      "h": 88,
+      "bg": "#000000",
+      "role": "header",
+      "cells": [
+        {
+          "img": "01-header-1.png",
+          "w": 143,
+          "alt": "Lançamentos",
+          "href": "/lancamentos",
+          "term": "MENU-TOPO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "01-header-2.png",
+          "w": 109,
+          "alt": "Perfumaria",
+          "href": "/perfume",
+          "term": "MENU-TOPO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "01-header-3.png",
+          "w": 116,
+          "alt": "Amakha Paris",
+          "href": "/",
+          "term": "MENU-TOPO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "01-header-4.png",
+          "w": 112,
+          "alt": "Best Sellers",
+          "href": "/queridinhos-da-amakha",
+          "term": "MENU-TOPO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "01-header-5.png",
+          "w": 120,
+          "alt": "Presentes",
+          "href": "/presenteaveis-amakha-paris",
+          "term": "MENU-TOPO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        }
+      ]
+    },
+    {
+      "type": "full",
+      "img": "02-banner.jpg",
+      "w": 600,
+      "h": 440,
+      "bg": "#281c18",
+      "alt": "Black Friday Amakha Paris: quanto mais favoritos no seu kit, mais vantagens para aproveitar. Montar meu kit.",
+      "href": "/monte-seu-kit",
+      "term": "HERO",
+      "source": "Frame 2041.jpg"
+    },
+    {
+      "type": "full",
+      "img": "07-banner.jpg",
+      "w": 600,
+      "h": 366,
+      "bg": "#ffffff",
+      "alt": "Lançamento Affection: escolha o seu mood mais envolvente. Hidratação, delicadeza e uma fragrância que envolve a pele a cada toque. Eu quero.",
+      "href": "/lancamentos",
+      "term": "ADENDO-AFFECTION",
+      "source": "Group 5043.jpg",
+      "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+    },
+    {
+      "type": "row",
+      "h": 180,
+      "bg": "#ffffff",
+      "role": "footer-depto",
+      "cells": [
+        {
+          "img": "08-depto-1.png",
+          "w": 150,
+          "alt": "Perfumaria",
+          "href": "/perfume",
+          "term": "DEPARTAMENTO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "08-depto-2.jpg",
+          "w": 150,
+          "alt": "Cabelo",
+          "href": "/produtos-para-cabelo",
+          "term": "DEPARTAMENTO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "08-depto-3.png",
+          "w": 150,
+          "alt": "Nutracêuticos",
+          "href": "/nutricional",
+          "term": "DEPARTAMENTO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "08-depto-4.png",
+          "w": 150,
+          "alt": "Corpo & Banho",
+          "href": "/produtos-para-corpo",
+          "term": "DEPARTAMENTO",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        }
+      ]
+    },
+    {
+      "type": "full",
+      "img": "09-beneficios.png",
+      "w": 600,
+      "h": 175,
+      "bg": "#ffffff",
+      "alt": "Só na Amakha Paris: 3% OFF no PIX, frete grátis acima de R$149,90 e parcele em até 6x sem juros",
+      "href": "/",
+      "term": "RODAPE",
+      "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+    },
+    {
+      "type": "row",
+      "h": 135,
+      "bg": "#ffffff",
+      "role": "footer",
+      "cells": [
+        {
+          "img": "10-contato-1.png",
+          "w": 300,
+          "alt": "Nossas lojas - encontre a mais próxima de você",
+          "href": "/institucionais/nossas-lojas",
+          "term": "RODAPE",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "10-contato-2.png",
+          "w": 300,
+          "alt": "Entre em contato: suporte@amakhaparis.com.br",
+          "href": "/fale-conosco",
+          "term": "RODAPE",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "h": 80,
+      "bg": "#ffffff",
+      "role": "footer",
+      "cells": [
+        {
+          "img": "11-social-1.png",
+          "w": 282,
+          "alt": "Siga a Amakha Paris nas redes sociais",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "11-social-2.png",
+          "w": 80,
+          "alt": "Facebook",
+          "href": "https://www.facebook.com/AmakhaCosmeticosOficial",
+          "term": "RODAPE",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "11-social-3.png",
+          "w": 78,
+          "alt": "YouTube",
+          "href": "https://www.youtube.com/c/AmakhaCosm%C3%A9ticosOficial",
+          "term": "RODAPE",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "11-social-4.png",
+          "w": 80,
+          "alt": "Instagram",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        },
+        {
+          "img": "11-social-5.png",
+          "w": 80,
+          "alt": "",
+          "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+        }
+      ]
+    },
+    {
+      "type": "full",
+      "img": "12-endereco.png",
+      "w": 600,
+      "h": 73,
+      "bg": "#ffffff",
+      "alt": "Rua Sacramento, 522 - 09640-000 - São Bernardo do Campo - SP - Brasil. CNPJ: 54.101.165/0001-89",
+      "base": "https://cdn.jsdelivr.net/gh/Cavilhaa/amakha-emails@a47f38c464d98f1bc2f916d9188f7d7bb3d62148/emails/2026-11-04-monte-seu-kit-bf/img/"
+    }
+  ]
+}
