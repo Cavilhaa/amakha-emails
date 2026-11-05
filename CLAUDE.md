@@ -23,6 +23,9 @@ O Cavilha manda: o .zip com as fatias + a arte completa (PNG) + o e-mail da clie
    - cada bloco/célula com `"source"` = qual fatia original; preencha `alt` (texto da imagem) e `href`
    - links do site podem ser só o caminho (`/monte-seu-kit`); a UTM é adicionada sozinha
    - título de seção (ex. "Aproveite antes que acabe!") fica com `href: null`
+   - opcional `term` por bloco/célula → vira `utm_term` (ex.: `MENU-TOPO`, `HERO`, `VITRINE-1`, `ADENDO-<NOME>`, `DEPARTAMENTO`, `RODAPE`)
+   - opcional `base` por bloco/célula → reaproveita imagem já hospedada de outra news (URL jsDelivr com commit fixo).
+     Só reaproveite depois de conferir que é idêntica (diff 0,00 contra a fatia da arte nova). Ex.: 08/11 reaproveita 19 imagens do 04/11.
 3. **Montar local e conferir**:
    `python3 tools/build_news.py emails/<news> file://$PWD/emails/<news>/img/`
    `python3 tools/check_news.py emails/<news> <arte.png>`
