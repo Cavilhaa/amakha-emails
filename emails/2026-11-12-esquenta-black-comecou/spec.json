@@ -1,0 +1,273 @@
+{
+  "utm": {
+    "utm_source": "connectif",
+    "utm_medium": "email",
+    "utm_campaign": "MGP_EMAIL_VENDAS_ESQUENTA-BLACK-FRIDAY",
+    "utm_content": "NEWS-ESQUENTA-BLACK-COMECOU_NEWSLETTER_2611"
+  },
+  "preheader": "Perfumes, kits e produtos capilares selecionados com até 45% OFF 🖤",
+  "folder": "2026-11-12-esquenta-black-comecou",
+  "note": "Ofertas em produtos selecionados, válidas enquanto durarem os estoques. Desconto de até 45% conforme condições do site.",
+  "art": "arte_1211.jpg",
+  "blocks": [
+    {
+      "type": "row",
+      "h": 88,
+      "bg": "#1a0407",
+      "cells": [
+        {
+          "img": "01-header-1.jpg",
+          "w": 143,
+          "alt": "Lançamentos",
+          "href": "/lancamentos",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-2.jpg",
+          "w": 109,
+          "alt": "Perfumaria",
+          "href": "/perfume",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-3.jpg",
+          "w": 116,
+          "alt": "Amakha Paris",
+          "href": "/",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-4.jpg",
+          "w": 112,
+          "alt": "Best Sellers",
+          "href": "/queridinhos-da-amakha",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-5.jpg",
+          "w": 120,
+          "alt": "Presentes",
+          "href": "/presenteaveis-amakha-paris",
+          "term": "MENU-TOPO"
+        }
+      ],
+      "role": "header"
+    },
+    {
+      "type": "full",
+      "img": "02-banner.jpg",
+      "w": 600,
+      "h": 440,
+      "bg": "#400e10",
+      "alt": "Esquenta Black Friday começou! Perfumes, kits e produtos capilares selecionados com até 45% OFF. Conferir ofertas",
+      "href": "/s",
+      "source": "Frame 2041.jpg",
+      "term": "HERO"
+    },
+    {
+      "type": "full",
+      "img": "03-banner.jpg",
+      "w": 600,
+      "h": 73,
+      "bg": "#ffffff",
+      "alt": "Escolha os seus favoritos",
+      "href": null,
+      "source": "Group 1942.png"
+    },
+    {
+      "type": "row",
+      "h": 347,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "04-v1.jpg",
+          "w": 210,
+          "alt": "Kit Perfumada D by Denise Lemos - de R$258,90 por R$189,00 - Comprar",
+          "href": "/kit-perfumada-d-by-denise-lemos/p",
+          "source": "Group 1949.png",
+          "term": "VITRINE-1"
+        },
+        {
+          "img": "04-v2.jpg",
+          "w": 180,
+          "alt": "Bad Man 100ml - de R$215,00 por R$172,00 - Comprar",
+          "href": "/deo-colonia-masculino-bad-man-100ml/p",
+          "source": "Group 1944.png",
+          "term": "VITRINE-2"
+        },
+        {
+          "img": "04-v3.jpg",
+          "w": 210,
+          "alt": "Mister Tom 100ml - de R$215,00 por R$172,00 - Comprar",
+          "href": "/deo-colonia-masculino-mister-tom-100ml/p",
+          "source": "Group 1945.png",
+          "term": "VITRINE-3"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "h": 359,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "05-v1.jpg",
+          "w": 210,
+          "alt": "521 Vip Rosé 15ml - de R$43,90 por R$39,51 - Comprar",
+          "href": "/deo-colonia-feminino-521-vip-rose-15ml/p",
+          "source": "Group 1951.png",
+          "term": "VITRINE-4"
+        },
+        {
+          "img": "05-v2.jpg",
+          "w": 180,
+          "alt": "Liberté 15ml - de R$43,90 por R$37,32 - Comprar",
+          "href": "/deo-colonia-feminino-liberte-15ml/p",
+          "source": "Group 1950.png",
+          "term": "VITRINE-5"
+        },
+        {
+          "img": "05-v3.jpg",
+          "w": 210,
+          "alt": "Creme Hidratante D by Denise Lemos 80ml - R$42,00 - Comprar",
+          "href": "/creme-hidratante-para-o-corpo-d-by-denise-lemos-80ml/p",
+          "source": "Group 5044.png",
+          "term": "VITRINE-6"
+        }
+      ]
+    },
+    {
+      "type": "full",
+      "img": "06-banner.jpg",
+      "w": 600,
+      "h": 381,
+      "bg": "#390706",
+      "alt": "Vem aí a Black Friday Amakha Paris 2026: cadastre-se na Lista VIP e tenha acesso antecipado às principais ofertas. Quero ser VIP",
+      "href": "/black-friday",
+      "source": "Group 5043.jpg",
+      "term": "ADENDO-LISTA-VIP"
+    },
+    {
+      "type": "row",
+      "h": 217,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "07-depto-1.jpg",
+          "w": 150,
+          "alt": "Perfumaria",
+          "href": "/perfume",
+          "term": "DEPARTAMENTO"
+        },
+        {
+          "img": "07-depto-2.jpg",
+          "w": 150,
+          "alt": "Cabelo",
+          "href": "/produtos-para-cabelo",
+          "term": "DEPARTAMENTO"
+        },
+        {
+          "img": "07-depto-3.jpg",
+          "w": 150,
+          "alt": "Nutracêuticos",
+          "href": "/nutricional",
+          "term": "DEPARTAMENTO"
+        },
+        {
+          "img": "07-depto-4.jpg",
+          "w": 150,
+          "alt": "Corpo & Banho",
+          "href": "/produtos-para-corpo",
+          "term": "DEPARTAMENTO"
+        }
+      ],
+      "role": "footer-depto"
+    },
+    {
+      "type": "full",
+      "img": "08-beneficios.jpg",
+      "w": 600,
+      "h": 175,
+      "bg": "#ffffff",
+      "href": "/",
+      "role": "footer",
+      "alt": "Só na Amakha Paris: 3% OFF no PIX, frete grátis acima de R$149,90 e parcele em até 6x sem juros",
+      "term": "RODAPE"
+    },
+    {
+      "type": "row",
+      "h": 135,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "09-contato-1.png",
+          "w": 300,
+          "alt": "Nossas lojas - encontre a mais próxima de você",
+          "href": "/institucionais/nossas-lojas",
+          "term": "RODAPE"
+        },
+        {
+          "img": "09-contato-2.png",
+          "w": 300,
+          "alt": "Entre em contato: suporte@amakhaparis.com.br",
+          "href": "/fale-conosco",
+          "term": "RODAPE"
+        }
+      ],
+      "role": "footer"
+    },
+    {
+      "type": "row",
+      "h": 80,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "10-social-1.png",
+          "w": 282,
+          "alt": "Siga a Amakha Paris nas redes sociais",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE"
+        },
+        {
+          "img": "10-social-2.png",
+          "w": 80,
+          "alt": "Facebook",
+          "href": "https://www.facebook.com/AmakhaCosmeticosOficial",
+          "term": "RODAPE"
+        },
+        {
+          "img": "10-social-3.png",
+          "w": 78,
+          "alt": "YouTube",
+          "href": "https://www.youtube.com/c/AmakhaCosm%C3%A9ticosOficial",
+          "term": "RODAPE"
+        },
+        {
+          "img": "10-social-4.png",
+          "w": 80,
+          "alt": "Instagram",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE"
+        },
+        {
+          "img": "10-social-5.png",
+          "w": 80,
+          "alt": "",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE"
+        }
+      ],
+      "role": "footer"
+    },
+    {
+      "type": "full",
+      "img": "11-endereco.png",
+      "w": 600,
+      "h": 57,
+      "bg": "#ffffff",
+      "href": null,
+      "role": "footer",
+      "alt": "Rua Sacramento, 522 - 09640-000 - São Bernardo do Campo - SP - Brasil. CNPJ: 54.101.165/0001-89"
+    }
+  ]
+}
