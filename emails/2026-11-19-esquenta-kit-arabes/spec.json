@@ -1,0 +1,251 @@
+{
+  "utm": {
+    "utm_source": "connectif",
+    "utm_medium": "email",
+    "utm_campaign": "MGP_EMAIL_VENDAS_ESQUENTA-BLACK-FRIDAY",
+    "utm_content": "NEWS-ESQUENTA-KIT-ARABES_NEWSLETTER_2611"
+  },
+  "preheader": "Coleção 6 Perfumes Árabes por R$158,04 com frete grátis 🖤",
+  "folder": "2026-11-19-esquenta-kit-arabes",
+  "note": "Ofertas válidas enquanto durarem os estoques, conforme condições do site.",
+  "art": "a7f80a9b-image.png",
+  "blocks": [
+    {
+      "type": "row",
+      "h": 88,
+      "bg": "#000000",
+      "cells": [
+        {
+          "img": "01-header-1.png",
+          "w": 143,
+          "alt": "Lançamentos",
+          "href": "/lancamentos",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-2.png",
+          "w": 109,
+          "alt": "Perfumaria",
+          "href": "/perfume",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-3.png",
+          "w": 116,
+          "alt": "Amakha Paris",
+          "href": "/",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-4.png",
+          "w": 112,
+          "alt": "Best Sellers",
+          "href": "/queridinhos-da-amakha",
+          "term": "MENU-TOPO"
+        },
+        {
+          "img": "01-header-5.png",
+          "w": 120,
+          "alt": "Presentes",
+          "href": "/presenteaveis-amakha-paris",
+          "term": "MENU-TOPO"
+        }
+      ],
+      "role": "header"
+    },
+    {
+      "type": "full",
+      "img": "02-banner.jpg",
+      "w": 600,
+      "h": 440,
+      "bg": "#270608",
+      "alt": "Esquenta Black Friday: Coleção 6 Perfumes Árabes de R$263,40 por R$158,04 com frete grátis. Aproveitar agora",
+      "href": "/colecao-6-perfumes-arabes/p",
+      "source": "Frame 2041.jpg",
+      "term": "HERO"
+    },
+    {
+      "type": "full",
+      "img": "03-banner.png",
+      "w": 600,
+      "h": 86,
+      "bg": "#ffffff",
+      "alt": "Aproveite também:",
+      "href": null,
+      "source": "Group 1942.png"
+    },
+    {
+      "type": "row",
+      "h": 324,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "04-v1.jpg",
+          "w": 600,
+          "alt": "Esquenta Black Friday: Crie sua assinatura! Kits Layering de R$87,80 por R$57,07. Aproveitar agora",
+          "href": "/kit-layering",
+          "source": "1200x628.jpg",
+          "term": "BANNER-KIT-LAYERING"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "h": 286,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "05-v1.jpg",
+          "w": 600,
+          "alt": "Esquenta Black Friday: Kit exclusivo Black: Kit Nutrição Intensa Mel Capilar de R$362,80 por R$217,68 com frete grátis. Aproveitar agora",
+          "href": "/kit-nutricao-intensa-mel-capilar/p",
+          "source": "1200x628-1.jpg",
+          "term": "BANNER-KIT-MEL-CAPILAR"
+        }
+      ]
+    },
+    {
+      "type": "full",
+      "img": "06-banner.png",
+      "w": 600,
+      "h": 86,
+      "bg": "#ffffff",
+      "alt": "Cadastre e aproveite ofertas exclusivas!",
+      "href": null,
+      "source": "Group 1943.png"
+    },
+    {
+      "type": "full",
+      "img": "07-banner.jpg",
+      "w": 600,
+      "h": 366,
+      "bg": "#390706",
+      "alt": "Vem aí a Black Friday Amakha Paris 2026: cadastre-se na Lista VIP e tenha acesso antecipado às principais ofertas. Quero ser VIP",
+      "href": "/black-friday",
+      "source": "Group-5043-vip.jpg",
+      "term": "ADENDO-LISTA-VIP"
+    },
+    {
+      "type": "row",
+      "h": 180,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "08-depto-1.png",
+          "w": 150,
+          "alt": "Perfumaria",
+          "href": "/perfume",
+          "term": "DEPARTAMENTO"
+        },
+        {
+          "img": "08-depto-2.jpg",
+          "w": 150,
+          "alt": "Cabelo",
+          "href": "/produtos-para-cabelo",
+          "term": "DEPARTAMENTO"
+        },
+        {
+          "img": "08-depto-3.png",
+          "w": 150,
+          "alt": "Nutracêuticos",
+          "href": "/nutricional",
+          "term": "DEPARTAMENTO"
+        },
+        {
+          "img": "08-depto-4.png",
+          "w": 150,
+          "alt": "Corpo & Banho",
+          "href": "/produtos-para-corpo",
+          "term": "DEPARTAMENTO"
+        }
+      ],
+      "role": "footer-depto"
+    },
+    {
+      "type": "full",
+      "img": "09-beneficios.png",
+      "w": 600,
+      "h": 175,
+      "bg": "#ffffff",
+      "href": "/",
+      "role": "footer",
+      "alt": "Só na Amakha Paris: 3% OFF no PIX, frete grátis acima de R$149,90 e parcele em até 6x sem juros",
+      "term": "RODAPE"
+    },
+    {
+      "type": "row",
+      "h": 135,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "10-contato-1.png",
+          "w": 300,
+          "alt": "Nossas lojas - encontre a mais próxima de você",
+          "href": "/institucionais/nossas-lojas",
+          "term": "RODAPE"
+        },
+        {
+          "img": "10-contato-2.png",
+          "w": 300,
+          "alt": "Entre em contato: suporte@amakhaparis.com.br",
+          "href": "/fale-conosco",
+          "term": "RODAPE"
+        }
+      ],
+      "role": "footer"
+    },
+    {
+      "type": "row",
+      "h": 80,
+      "bg": "#ffffff",
+      "cells": [
+        {
+          "img": "11-social-1.png",
+          "w": 282,
+          "alt": "Siga a Amakha Paris nas redes sociais",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE"
+        },
+        {
+          "img": "11-social-2.png",
+          "w": 80,
+          "alt": "Facebook",
+          "href": "https://www.facebook.com/AmakhaCosmeticosOficial",
+          "term": "RODAPE"
+        },
+        {
+          "img": "11-social-3.png",
+          "w": 78,
+          "alt": "YouTube",
+          "href": "https://www.youtube.com/c/AmakhaCosm%C3%A9ticosOficial",
+          "term": "RODAPE"
+        },
+        {
+          "img": "11-social-4.png",
+          "w": 80,
+          "alt": "Instagram",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE"
+        },
+        {
+          "img": "11-social-5.png",
+          "w": 80,
+          "alt": "",
+          "href": "https://www.instagram.com/amakhaoficial/",
+          "term": "RODAPE"
+        }
+      ],
+      "role": "footer"
+    },
+    {
+      "type": "full",
+      "img": "12-endereco.png",
+      "w": 600,
+      "h": 73,
+      "bg": "#ffffff",
+      "href": null,
+      "role": "footer",
+      "alt": "Rua Sacramento, 522 - 09640-000 - São Bernardo do Campo - SP - Brasil. CNPJ: 54.101.165/0001-89"
+    }
+  ]
+}
